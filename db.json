@@ -1,0 +1,32 @@
+{
+  "data": {
+    "name": "Geekster"
+  },
+  "results": [
+    {
+      "id": 2,
+      "name": "himanshu sahu",
+      "gender": "male"
+    },
+    {
+      "name": "himanshu",
+      "gender": "sahu",
+      "id": 3
+    },
+    {
+      "name": "rahu sahu",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "name": "dfs",
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "name": "himanshu",
+      "gender": "male",
+      "id": 6
+    }
+  ]
+}

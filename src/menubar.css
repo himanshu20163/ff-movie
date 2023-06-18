@@ -1,0 +1,28 @@
+.main_header{
+    height:10vh;
+    width:100%;
+    border:2px solid red;
+    box-sizing: border-box;
+    display: flex;
+}
+.main_header .header-left{
+    width:50%;
+    height:100%;
+    border:2px solid green;
+    display: flex;
+}
+.main_header .header-left .header_logo{
+    width:25%;
+    height: 95%;
+    border:2px solid yellow;
+}
+.main_header .header-left .header_left_menu{
+    width:75%;
+    height: 95%;
+    border:2px solid rgb(225, 84, 3);
+}
+.main_header .header-right{
+    width:50%;
+    height: 100%;
+    border:2px solid blue;
+}
