@@ -17,11 +17,9 @@ const Showalltask = () => {
     }
     // console.log(mytodolist.showeditbox);
     const edit_task = (ele)=>{
-      mytodolist.alldata.filter((e,i)=>{
-        if (i == ele) {
-          mytodolist.seteditbox(true);
-        }
-      });
+      const updattaks = [...mytodolist.alldata];
+      updattaks[ele] = prompt('Enter the updated task', mytodolist.alldata[ele]);
+      mytodolist.setalldata(updattaks);
    }
 
    const setmark = ()=>{
@@ -42,13 +40,7 @@ const Showalltask = () => {
                     <i className='fa fa-edit' onClick={()=>edit_task(i)}></i>
                     <i className='fa fa-trash' onClick={()=>delete_task(i)}></i>
                     </div> 
-                    { 
-                      mytodolist.showeditbox ? <div><input type="text" name="" id="" 
-                    />
-                    <button >Update</button>
-                    </div>
-                      : null
-                    }   
+                     
                 </div>
             )
           })

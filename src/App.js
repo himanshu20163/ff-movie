@@ -15,10 +15,12 @@ import { Services } from './Navbar/Services';
 import { Contact } from './Navbar/Contact';
 import Navbar from './Navbar/Navbar';
 import { Todohome } from './TodoApp/Todohome';
+import MovieApp from './movie-app/Movie-app';
+import PostTable from './poll-app/PostTable';
 
 function App() {
   return (
-    <div className="App" style={{display:"flex",flexDirection:"column",height:"100vh",width:"100%",border:"2px solid green"}}>
+    <div className="App" style={{display:"flex",flexDirection:"column",height:"100vh",width:"100%",padding:"50px"}}>
       {/* <Demo /> */}
       {/* <Users /> */}
       {/* <A /> */}
@@ -33,8 +35,9 @@ function App() {
         <Route path="/contactus" element={<Contact />}></Route>
       </Routes>
       </div> */}
-      <Todohome />
-      
+      {/* <Todohome /> */}
+      {/* <MovieApp /> */}
+      <PostTable />
     </div>
   );
 }
