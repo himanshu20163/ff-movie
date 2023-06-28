@@ -15,7 +15,7 @@ import { Services } from './Navbar/Services';
 import { Contact } from './Navbar/Contact';
 import Navbar from './Navbar/Navbar';
 import { Todohome } from './TodoApp/Todohome';
-import MovieApp from './movie-app/Movie-app';
+import { Movie_App } from './movie-app/MovieApp';
 import PostTable from './poll-app/PostTable';
 
 function App() {
@@ -36,8 +36,11 @@ function App() {
       </Routes>
       </div> */}
       {/* <Todohome /> */}
-      {/* <MovieApp /> */}
-      <PostTable />
+      <Routes>
+           <Route path='/' element={<Movie_App />}></Route>
+          
+        </Routes>
+      {/* <PostTable /> */}
     </div>
   );
 }
