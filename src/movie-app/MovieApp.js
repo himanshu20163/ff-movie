@@ -17,7 +17,7 @@ export const Movie_App = () => {
     //https://www.omdbapi.com/?apikey=
 
     const fetch_data = async ()=>{
-        const ans = await fetch(`http://www.omdbapi.com/?s=${moviename}&apikey=bbd65a97`);
+        const ans = await fetch(`https://www.omdbapi.com/?s=${moviename}&apikey=bbd65a97`);
         const res = await ans.json();
         console.log(res);
         setmovielist(res.Search);
